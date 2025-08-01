@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G.flow Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header class="hero-section">
+    <div class="overlay">
+      <h1>G.flow Gallery</h1>
+      <p class="tagline">Flowing creativity.</p>
+    </div>
+  </header>
+
+  <section class="gallery-section">
+    <img src="assets/img1.jpg" alt="Gallery Image 1" />
+    <img src="assets/img2.jpg" alt="Gallery Image 2" />
+  </section>
+
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>G.flow Gallery is a space for African contemporary art. We’re committed to showcasing innovative works and fostering appreciation for artistic expression across the continent.</p>
+  </section>
+
+  <section class="exhibit-section">
+    <h2>Current Exhibition</h2>
+    <p><strong>“In Between Hues”</strong> – Capturing memory through bold color expressions. Showing June 5 – July 15.</p>
+  </section>
+
+  <section class="events-section">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li><strong>May 14:</strong> Gallery Talk – Exploring Color</li>
+      <li><strong>June 1:</strong> Art Workshop – Collage Techniques</li>
+      <li><strong>June 24:</strong> Panel Discussion – African Art Trends</li>
+    </ul>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section class="comment-section">
+    <h2>Guestbook</h2>
+    <div id="comments"></div>
+    <form id="comment-form">
+      <input type="text" id="guestName" placeholder="Your name" required />
+      <textarea id="guestMessage" placeholder="Your comment..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/2349060814505" class="whatsapp-button" target="_blank">
+    Chat on WhatsApp
+  </a>
+
+  <!-- Tawk.to Live Chat -->
+  <script>
+    var Tawk_API = Tawk_API || {};
+    (function () {
+      var s1 = document.createElement("script");
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/YOUR_TAWKTO_ID_HERE/1';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      document.body.appendChild(s1);
+    })();
+  </script>
+
+</body>
+</html>
