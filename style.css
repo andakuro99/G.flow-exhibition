@@ -1,0 +1,175 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #222;
+  background-color: #f7f2e7;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: normal;
+  text-align: center;
+  margin: 1em 0 0.5em;
+}
+
+p, li {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* Hero section */
+.hero-section {
+  background: url('assets/img1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 240, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 0.5em;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+/* Gallery Section */
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fffaf3;
+}
+
+.gallery-section img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-section img:hover {
+  transform: scale(1.05);
+}
+
+/* About, Exhibit, Events, Contact */
+section {
+  padding: 3rem 1rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Contact form */
+#contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+#contact-form button {
+  padding: 0.75rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#contact-form button:hover {
+  background-color: #555;
+}
+
+/* Comment section */
+#comment-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#comments {
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+#comments p {
+  background: #eee;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+/* Scroll fade animation */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .gallery-section img {
+    width: 90%;
+  }
+}
